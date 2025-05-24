@@ -4,11 +4,13 @@
   "description": "Chrome extension for LeetTrack",
   "main": "src/background.js",
   "scripts": {
+    "prebuild": "node scripts/build.js",
     "dev": "webpack --watch --config webpack.config.js",
     "build": "webpack --config webpack.config.js",
     "test": "jest"
   },
   "dependencies": {
+    "dotenv": "^16.4.5",
     "firebase": "^10.8.0"
   },
   "devDependencies": {

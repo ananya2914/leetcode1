@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeetTrack - Track Your LeetCode Progress</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #4F46E5 0%, #7C3AED 100%);
+        }
+        .feature-card {
+            transition: transform 0.3s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <img src="assets/icon48.png" alt="LeetTrack Logo" class="h-8 w-8">
+                    <span class="ml-2 text-xl font-bold text-gray-900">LeetTrack</span>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="#features" class="text-gray-600 hover:text-gray-900">Features</a>
+                    <a href="#installation" class="text-gray-600 hover:text-gray-900">Installation</a>
+                    <a href="https://github.com/yourusername/leet-track" target="_blank" class="text-gray-600 hover:text-gray-900">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="gradient-bg text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="text-center">
+                <h1 class="text-4xl font-bold sm:text-5xl md:text-6xl">
+                    Track Your LeetCode Journey
+                </h1>
+                <p class="mt-4 text-xl text-gray-100">
+                    A Chrome extension that helps you track your LeetCode progress, analyze your performance, and stay motivated.
+                </p>
+                <div class="mt-8">
+                    <a href="#installation" class="inline-block bg-white text-indigo-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                        Get Started
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <div id="features" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">Features</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="feature-card bg-white p-6 rounded-lg shadow-sm">
+                    <div class="text-indigo-600 text-2xl mb-4">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Progress Tracking</h3>
+                    <p class="text-gray-600">Track your solved problems, difficulty distribution, and topic-wise progress.</p>
+                </div>
+                <div class="feature-card bg-white p-6 rounded-lg shadow-sm">
+                    <div class="text-indigo-600 text-2xl mb-4">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Streak Tracking</h3>
+                    <p class="text-gray-600">Maintain your daily streak and stay motivated to solve problems regularly.</p>
+                </div>
+                <div class="feature-card bg-white p-6 rounded-lg shadow-sm">
+                    <div class="text-indigo-600 text-2xl mb-4">
+                        <i class="fas fa-sync"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Real-time Updates</h3>
+                    <p class="text-gray-600">Get instant updates on your progress as you solve problems on LeetCode.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Installation Section -->
+    <div id="installation" class="py-20 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">Installation</h2>
+            <div class="bg-white rounded-lg shadow-sm p-8 max-w-3xl mx-auto">
+                <div class="space-y-6">
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-8 w-8 rounded-full bg-indigo-600 text-white">
+                                1
+                            </div>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-lg font-medium text-gray-900">Download the Extension</h3>
+                            <p class="mt-2 text-gray-600">
+                                Download the latest release from the Chrome Web Store or build it from source.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-8 w-8 rounded-full bg-indigo-600 text-white">
+                                2
+                            </div>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-lg font-medium text-gray-900">Install in Chrome</h3>
+                            <p class="mt-2 text-gray-600">
+                                Open Chrome and go to <code class="bg-gray-100 px-2 py-1 rounded">chrome://extensions</code>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-8 w-8 rounded-full bg-indigo-600 text-white">
+                                3
+                            </div>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-lg font-medium text-gray-900">Enable Developer Mode</h3>
+                            <p class="mt-2 text-gray-600">
+                                Toggle on "Developer mode" in the top right corner of the extensions page.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-8 w-8 rounded-full bg-indigo-600 text-white">
+                                4
+                            </div>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-lg font-medium text-gray-900">Load the Extension</h3>
+                            <p class="mt-2 text-gray-600">
+                                Click "Load unpacked" and select the extension directory.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-8 text-center">
+                    <a href="https://github.com/yourusername/leet-track/releases" target="_blank" class="inline-block bg-indigo-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-indigo-700 transition-colors">
+                        Download Latest Release
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <p class="text-gray-400">Made with ❤️ for the LeetCode community</p>
+                <div class="mt-4 space-x-4">
+                    <a href="https://github.com/yourusername/leet-track" target="_blank" class="text-gray-400 hover:text-white">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 
